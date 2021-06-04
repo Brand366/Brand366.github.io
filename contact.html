@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-AU">
 
 <head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
     <title>Brandon's Portfolio | Contact</title>
+    <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
     <meta charset="utf-8">
-    <link rel="icon" href="" />
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="img/programming.png" />
     <meta name="viewport" content="width=device-width, intial-scale=1" />
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header></header>
+    <!-- header -->
+    <header id="page-header-container">
+        <div class="logo-container">
+            <img class="logo" src="img/logo.png" alt="logo-image">
+        </div>
+        <!-- nav bar -->
+        <nav>
+            <ul id="nav-bar" role="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+
+        </article>
+        <article id="form-container">
+            <div class="request-form">
+                <h2 class="request-header">Special Request Form</h2>
+                <form method="post" action="contact-form-handler.php">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" size="15" maxlength="15" placeholder="Your name.."
+                        required><br>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" size="25" maxlength="25"
+                        placeholder="Your last name.." required><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number.." pattern="^\d{10}$"
+                        required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Your phone number.." pattern="^\d{10}$"
+                        required><br>
+
+                    <label for="subject"></label>
+                    <textarea id="subject" name="subject" maxlength="250" placeholder="Enter your message here.."
+                        style="height:200px" required></textarea>
+
+                    <input id="submit" type="submit" value="Submit">
+
+                </form>
+
+            </div>
+        </article>
+    </main>
 </body>
 
 </html>

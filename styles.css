@@ -1,0 +1,13 @@
+/* universal styles for pages */
+
+#nav-bar .active {
+    color:            #F8F8F8;
+    background-color: #4f81bd;
+}
+
+
+/* home page styles */
+
+#home-ccc-imgs li {
+    list-style-type: none;
+}

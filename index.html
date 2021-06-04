@@ -2,31 +2,70 @@
 <html lang="en-AU">
 
 <head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
     <title>Brandon's Portfolio | Home</title>
     <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="img/code.png" />
+    <link rel="icon" href="img/programming.png" />
     <meta name="viewport" content="width=device-width, intial-scale=1" />
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Home</h1>
-        <p id="brand">Brandon Vonhoff</p>
+    <!-- header -->
+    <header id="page-header-container">
+        <div class="logo-container">
+            <img class="logo" src="img/logo.png" alt="logo-image">
+        </div>
+        <!-- nav bar -->
+        <nav>
+            <ul id="nav-bar" role="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul id="page_navigation" role="navigation">
-            <li class="page_nav_item1"><a href="about.html">About</a></li>
-            <li class="page_nav_item2"><a href="blog.html">Blog</a></li>
-            <li class="page_nav_item3"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
+    <!-- home content -->
     <main>
+        <article>
+            <div class="home-intro-container">
+                <h2>Brandon Vonhoff</h2>
+                <p>Aspiring DevOps Engineer with profiency in the following below:</p>
+            </div>
 
+            <div class="img-container">
+                <ul id="home-ccc-imgs">
+                    <li><img src="img/code.png" alt="coding input symbols">
+                        <p>Coding</p>
+                    </li>
+                    <li><img src="img/cloud-network.png" alt="cloud network with nodes">
+                        <p>Cloud</p>
+                    </li>
+                    <li><img src="img/cyber-security.png" alt="cyber security network and nodes">
+                        <p>Cyber</p>
+                    </li>
+                </ul>
+            </div>
+        </article>
     </main>
 </body>
+<footer>
+    <p>Website Creator: Brandon Vonhoff</p>
+    <p><a class="creator-email" href="mailto:brandon.vonhoff@yahoo.com">brandon.vonhoff@yahoo.com</a></p>
+    <p> &copy; Copyright 2020 Brandon Vonhoff All Rights Reserved</p>
+</footer>
 
 </html>
