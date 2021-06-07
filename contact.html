@@ -12,12 +12,12 @@
             });
         });
     </script>
-    <title>Brandon's Portfolio | Contact</title>
+    <title>Brandon's Portfolio | Home</title>
     <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="img/programming.png" />
     <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link rel="icon" href="img/programming.png" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -29,7 +29,7 @@
         </div>
         <!-- nav bar -->
         <nav>
-            <ul id="nav-bar" role="navigation">
+            <ul id="nav-bar-container" role="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -37,43 +37,58 @@
             </ul>
         </nav>
     </header>
-
+    <!-- contact info -->
     <main>
-        <article>
-
+        <article id="contact-info-container">
+            <h3>Contact Info</h3>
+            <span>Ph No.</span>
+            <p>"0403 518 200"</p>
+            <span>My email:</span>
+            <p>brandon.vonhoff@yahoo.com</p>
         </article>
+        <!-- contact form -->
         <article id="form-container">
-            <div class="request-form">
-                <h2 class="request-header">Special Request Form</h2>
-                <form method="post" action="contact-form-handler.php">
+            <h2 class="request-header">Contact Form</h2>
+            <form method="POST" action="contact-form-handler.php">
 
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" size="15" maxlength="15" placeholder="Your name.."
-                        required><br>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" size="15" maxlength="15" placeholder="Your name.."
+                    required><br>
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" size="25" maxlength="25"
-                        placeholder="Your last name.." required><br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" size="25" maxlength="25" placeholder="Your last name.."
+                    required><br>
 
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your phone number.." pattern="^\d{10}$"
-                        required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number.." pattern="^\d{10}$"
+                    required><br>
 
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="Your phone number.." pattern="^\d{10}$"
-                        required><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="visitor-email" placeholder="Your email.." required><br>
 
-                    <label for="subject"></label>
-                    <textarea id="subject" name="subject" maxlength="250" placeholder="Enter your message here.."
-                        style="height:200px" required></textarea>
+                <label for="message"></label>
+                <textarea id="message" name="message" maxlength="250" placeholder="Enter your message here.."
+                    style="height:200px" required></textarea>
 
-                    <input id="submit" type="submit" value="Submit">
-
-                </form>
-
-            </div>
+                <input id="submit" type="submit" value="Submit">
+            </form>
         </article>
     </main>
 </body>
+<!-- footer -->
+<footer>
+    <article id="professional-links">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img src="img/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img src="img/github.png" alt="Github Logo"></a></li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"><img src="img/email.png" alt="email logo"></a></li>
+        </ul>
+    </article>
+    <div class="copyright">
+        <p>Website Creator: Brandon Vonhoff</p>
+        <p> &copy; Copyright 2021 Brandon Vonhoff All Rights Reserved</p>
+    </div>
+</footer>
 
 </html>

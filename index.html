@@ -16,20 +16,20 @@
     <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
-    <link rel="icon" href="img/programming.png" />
     <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link rel="icon" href="img/programming.png" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- header -->
     <header id="page-header-container">
-        <div class="logo-container">
+        <div id="logo-container">
             <img class="logo" src="img/logo.png" alt="logo-image">
         </div>
         <!-- nav bar -->
         <nav>
-            <ul id="nav-bar" role="navigation">
+            <ul id="nav-bar-container" role="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -41,12 +41,12 @@
     <!-- home content -->
     <main>
         <article>
-            <div class="home-intro-container">
-                <h2>Brandon Vonhoff</h2>
-                <p>Aspiring DevOps Engineer with profiency in the following below:</p>
-            </div>
+            <section class="home-intro-container">
+                <h2> Greetings! My name is Brandon Vonhoff</h2>
+                <p>I'm an aspiring DevOps Engineer that specializes in the areas below:</p>
+            </section>
 
-            <div class="img-container">
+            <section class="img-container">
                 <ul id="home-ccc-imgs">
                     <li><img src="img/code.png" alt="coding input symbols">
                         <p>Coding</p>
@@ -58,14 +58,24 @@
                         <p>Cyber</p>
                     </li>
                 </ul>
-            </div>
+            </section>
         </article>
     </main>
 </body>
+<!-- footer -->
 <footer>
-    <p>Website Creator: Brandon Vonhoff</p>
-    <p><a class="creator-email" href="mailto:brandon.vonhoff@yahoo.com">brandon.vonhoff@yahoo.com</a></p>
-    <p> &copy; Copyright 2020 Brandon Vonhoff All Rights Reserved</p>
+    <article id="professional-links">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img src="img/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img src="img/github.png" alt="Github Logo"></a></li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"><img src="img/email.png" alt="email logo"></a></li>
+        </ul>
+    </article>
+    <div class="copyright">
+        <p>Website Creator: Brandon Vonhoff</p>
+        <p> &copy; Copyright 2021 Brandon Vonhoff All Rights Reserved</p>
+    </div>
 </footer>
 
 </html>
