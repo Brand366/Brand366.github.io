@@ -12,7 +12,7 @@
             });
         });
     </script>
-    <title>Brandon's Portfolio | Home</title>
+    <title>Brandon's Portfolio | Contact</title>
     <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
@@ -23,8 +23,8 @@
 
 <body>
     <!-- header -->
-    <header id="page-header-container">
-        <div class="logo-container">
+    <header class="page-header-container">
+        <div id="logo-container">
             <img class="logo" src="img/logo.png" alt="logo-image">
         </div>
         <!-- nav bar -->
@@ -49,7 +49,7 @@
         <!-- contact form -->
         <article id="form-container">
             <h2 class="request-header">Contact Form</h2>
-            <form method="POST" action="contact-form-handler.php">
+            <form method="POST" action="mailto:brandon.vonhoff@yahoo.com">
 
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" size="15" maxlength="15" placeholder="Your name.."
@@ -64,7 +64,7 @@
                     required><br>
 
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="visitor-email" placeholder="Your email.." required><br>
+                <input type="email" id="email" name="visitor-email" placeholder="Your email.." required><br>
 
                 <label for="message"></label>
                 <textarea id="message" name="message" maxlength="250" placeholder="Enter your message here.."
@@ -76,19 +76,25 @@
     </main>
 </body>
 <!-- footer -->
-<footer>
-    <article id="professional-links">
-        <ul>
-            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img src="img/linkedin.png"
-                        alt="LinkedIn Logo"></a></li>
-            <li><a href="https://github.com/Brand366"><img src="img/github.png" alt="Github Logo"></a></li>
-            <li><a href="mailto:brandon.vonhoff@yahoo.com"><img src="img/email.png" alt="email logo"></a></li>
-        </ul>
-    </article>
-    <div class="copyright">
+<footer class="footer-container">
+
+    <div class="copyright-container">
         <p>Website Creator: Brandon Vonhoff</p>
         <p> &copy; Copyright 2021 Brandon Vonhoff All Rights Reserved</p>
     </div>
+
+    <article>
+        <ul id="footer-links-container">
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img class="footer-img" src="img/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img class="footer-img" src="img/github.png"
+                        alt="Github Logo"></a>
+            </li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"></a><img class="footer-img" src="img/email.png"
+                    alt="email logo"></a></li>
+        </ul>
+    </article>
+
 </footer>
 
 </html>

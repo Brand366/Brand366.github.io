@@ -23,8 +23,7 @@
 
 <body>
     <!-- header -->
-    <header id="page-header-container">
-        <h1>About me</h1>
+    <header class="page-header-container">
         <div id="logo-container">
             <img class="logo" src="img/logo.png" alt="logo-image">
         </div>
@@ -39,32 +38,62 @@
         </nav>
     </header>
     <main>
-        <!-- content about self -->
-        <article>
-            <section id="self-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error voluptatum
-                    facilis in maxime
-                    similique nobis reiciendis ut exercitationem ea aliquam totam quam perferendis nihil, minus fugiat.
-                    Eligendi, asperiores ea!</p>
-                <a href="link-folder/RESUME.pdf">Resume</a>
-            </section>
-        </article>
+        <div id="self-img-container">
+            <figure>
+                <img src="img/me.jpg" alt="photo of Brandon Vonhoff">
+                <figcaption class='name-text'>Brandon Vonhoff</figcaption>
+            </figure>
+        </div>
+        <!-- content about me -->
+        <section id="self-content-container">
+            <h2>A Bit About Me</h2>
+            <article id="self-content">
+                <p>I have always had a keen interest in the world of programming, and recently started my journey down
+                    the path of learning about the many applications of programming and how it can be used creatively
+                    with Coder Academy in the Code, Cloud & Cyber-security bootcamp course.
+                    When I'm not engrossed in programming adn the such, I'm usually working out, hiking all around, and
+                    hanging out with my son (not particularly in that order &#128516).
+                    I have luckily
+                    travelled to New Zealand and hiked a plenty while I was there but unfortunately didn't go to the
+                    Shire. I also have travelled to Japan and explored the beautiful cities of Tokyo, Kyoto, and Osaka.
+                </p>
+            </article>
+        </section>
+
+        <section id="goals-container">
+            <h2>Goals with Programming</h2>
+            <article id="goals-content">
+                <p>My current goal in regards to programming is to become a full-fledged, full-stack developer. Whether
+                    that is with a particluar company or free lancing on my own, I hope to dicover what area in
+                    particluar interests me and in what way I can use programming to help people in any way that is
+                    possible. If it interests you though, you can find my resume below for a run-down of my work
+                    experience and education:</p>
+            </article>
+        </section>
+        <!-- link to resume-->
+        <a id='resume-link' href="link-folder/RESUME.pdf">My Resume</a>
     </main>
 </body>
 <!-- footer -->
-<footer>
-    <article id="professional-links">
-        <ul>
-            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img src="img/linkedin.png"
-                        alt="LinkedIn Logo"></a></li>
-            <li><a href="https://github.com/Brand366"><img src="img/github.png" alt="Github Logo"></a></li>
-            <li><a href="mailto:brandon.vonhoff@yahoo.com"><img src="img/email.png" alt="email logo"></a></li>
-        </ul>
-    </article>
-    <div class="copyright">
+<footer class="footer-container">
+
+    <div class="copyright-container">
         <p>Website Creator: Brandon Vonhoff</p>
         <p> &copy; Copyright 2021 Brandon Vonhoff All Rights Reserved</p>
     </div>
+
+    <article>
+        <ul id="footer-links-container">
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img class="footer-img" src="img/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img class="footer-img" src="img/github.png"
+                        alt="Github Logo"></a>
+            </li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"></a><img class="footer-img" src="img/email.png"
+                    alt="email logo"></a></li>
+        </ul>
+    </article>
+
 </footer>
 
 </html>

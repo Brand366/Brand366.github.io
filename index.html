@@ -23,7 +23,7 @@
 
 <body>
     <!-- header -->
-    <header id="page-header-container">
+    <header class="page-header-container">
         <div id="logo-container">
             <img class="logo" src="img/logo.png" alt="logo-image">
         </div>
@@ -40,42 +40,53 @@
 
     <!-- home content -->
     <main>
-        <article>
-            <section class="home-intro-container">
-                <h2> Greetings! My name is Brandon Vonhoff</h2>
-                <p>I'm an aspiring DevOps Engineer that specializes in the areas below:</p>
-            </section>
+        <section id="home-intro-container">
+            <h1> Welcome! I am Brandon Vonhoff</h1>
+            <h2> I'm currently studying to be a DevOps engineer that specializes in the following:</h2>
+        </section>
 
-            <section class="img-container">
-                <ul id="home-ccc-imgs">
-                    <li><img src="img/code.png" alt="coding input symbols">
-                        <p>Coding</p>
-                    </li>
-                    <li><img src="img/cloud-network.png" alt="cloud network with nodes">
-                        <p>Cloud</p>
-                    </li>
-                    <li><img src="img/cyber-security.png" alt="cyber security network and nodes">
-                        <p>Cyber</p>
-                    </li>
-                </ul>
-            </section>
+        <article class="home-img-container">
+
+            <figure>
+                <img class='home-img' src="img/code.png" alt="coding input symbols">
+                <figcaption class='home-img-description'>Coding</figcaption>
+            </figure>
+
+            <figure>
+                <img img class='home-img' src="img/cloud-network.png" alt="cloud network with nodes">
+                <figcaption class='home-img-description'>Cloud</figcaption>
+            </figure>
+
+
+            <figure>
+                <img img class='home-img' src="img/cyber-security.png" alt="cyber security network and nodes">
+                <figcaption class='home-img-description'>Cyber</figcaption>
+            </figure>
+
         </article>
+
     </main>
 </body>
 <!-- footer -->
-<footer>
-    <article id="professional-links">
-        <ul>
-            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img src="img/linkedin.png"
-                        alt="LinkedIn Logo"></a></li>
-            <li><a href="https://github.com/Brand366"><img src="img/github.png" alt="Github Logo"></a></li>
-            <li><a href="mailto:brandon.vonhoff@yahoo.com"><img src="img/email.png" alt="email logo"></a></li>
-        </ul>
-    </article>
-    <div class="copyright">
+<footer class="footer-container">
+
+    <div class="copyright-container">
         <p>Website Creator: Brandon Vonhoff</p>
         <p> &copy; Copyright 2021 Brandon Vonhoff All Rights Reserved</p>
     </div>
+
+    <article>
+        <ul id="footer-links-container">
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img class="footer-img" src="img/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img class="footer-img" src="img/github.png"
+                        alt="Github Logo"></a>
+            </li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"></a><img class="footer-img" src="img/email.png"
+                    alt="email logo"></a></li>
+        </ul>
+    </article>
+
 </footer>
 
 </html>
