@@ -286,6 +286,7 @@ p {
     width: 31%;
     margin-right: 1rem;
     margin-left: 1rem;
+    margin-top: 5rem;
 }
 
 .about-content-text h2 {
@@ -294,7 +295,6 @@ p {
     font-weight: 400;
     font-style: oblique;
     padding-top: 1rem;
-    padding-bottom: 2rem;
     letter-spacing: 0.1rem;
 }
 
@@ -483,6 +483,8 @@ p {
     padding-bottom: 6vh;
     font-size: 1.7rem;
     font-weight: 800;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
 }
 
 .top-btn {
@@ -550,6 +552,8 @@ p {
 .professional-img:hover {
     filter: brightness(80%);
 }
+
+/* contact form */
 
 #form-container {
     float: right;
