@@ -1,6 +1,10 @@
 # Brand366.github.io
 
-Above is the repository that I used for the website.
+Above is the website.
+
+# https://github.com/Brand366/Brand366.github.io
+
+Above is the repository for the portfolio
 
 # My Portfolio
 
@@ -43,7 +47,7 @@ The About page contains an image of me and my name located under. The image and 
 
 ### Blog Landing Page:
 
-This page included a page introduction and description at the top the page, this is followed by 5 containers for the blog post information. These containers are manipulated by flex box to displayed in a row, filling the screen by three containers at a time and then wrapping the excess to the next row and so on. Each container contains a heading, image, publish date for the blog post itself, and a short blurb about the content. The image funtions as a link to the blog post itself. The containers for smaller devices form into a sinlge column layout for accessibility for those users. The following is the image of the blog post landing page: ![bloglandingpage](https://user-images.githubusercontent.com/74232016/121772460-cc7b8480-cbb8-11eb-84ef-b18ed13f942b.png)
+This page included a page introduction and description at the top the page, this is followed by 5 containers for the blog post information. These containers are manipulated by flex box to displayed in a row, filling the screen by three containers at a time and then wrapping the excess to the next row and so on. Each container contains a heading, image, publish date for the blog post itself, and a short blurb about the content. The image funtions as a link to the blog post itself. The containers for smaller devices form into a sinlge column layout for accessibility for those users. The following is the image of the blog post landing page: ![bloglandingpage](https://user-images.githubusercontent.com/74232016/121772637-eec1d200-cbb9-11eb-9c9a-d28155dc1259.png
   
 
 ### Blog Post Page:
