@@ -56,4 +56,22 @@ The design for the blog post page is similar to the containers located in the bl
 The contact page contains two containers. On desktop, they are layed out side-by-side using floats, margins, and paddings. There was no particular reason for this, as I just wanted to try different styling methods. Although, they styled similarly to the rest of the website. The two containers are displayed side-by-side with the contact information on the left. This container has my phone number, email address, and links to my GitHub & LinkedIn accounts. While the right most container is the contact form for users to input their name, email address, and a short message to be submitted via a mailto: button at the bottom of the form. This is where I wanted to implement PHP & AJAX scripts for serverside use & to help facilitate the message to be sent correctly without being taken outside of the site to the users default email program. This will be rectified in futher iterations as well. For smaller devices, the containers form into a single column layout, with the contact information container at the top for readability. The following is a screenshot the page itself: ![contactpage](https://user-images.githubusercontent.com/74232016/121772929-fbdfc080-cbbb-11eb-85fe-2db59f7babb8.png)
 
 
+### References:
 
+W3schools.com. 2021. W3Schools Online Web Tutorials. [online] Available at: <https://www.w3schools.com/> [Accessed 12 June 2021].
+
+Htmlcheatsheet.com. 2021. HTML Cheat Sheet. [online] Available at: <https://htmlcheatsheet.com/> [Accessed 12 June 2021].
+
+Htmlcheatsheet.com. 2021. Online Interactive CSS Cheat Sheet. [online] Available at: <https://htmlcheatsheet.com/css/> [Accessed 12 June 2021].
+
+SVG Backgrounds. 2021. Create Customizable, Hi-Def, and Scalable Backgrounds. [online] Available at: <https://www.svgbackgrounds.com/#pattern-randomized> [Accessed 12 June 2021].
+
+Google Fonts. 2021. Google Fonts. [online] Available at: <https://fonts.google.com/> [Accessed 12 June 2021].
+
+Flaticon. 2021. Flaticon, the largest database of free vector icons. [online] Available at: <https://www.flaticon.com/> [Accessed 12 June 2021].
+
+Phppot. 2021. PHP Contact Form - Phppot. [online] Available at: <https://phppot.com/php/php-contact-form/> [Accessed 12 June 2021].
+
+Treehouse Blog. 2021. How to Create an AJAX Contact Form [Article] | Treehouse Blog. [online] Available at: <https://blog.teamtreehouse.com/create-ajax-contact-form> [Accessed 12 June 2021].
+
+page, N., 2021. Navbar highlight for current page. [online] Stack Overflow. Available at: <https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page#33697152> [Accessed 12 June 2021].
