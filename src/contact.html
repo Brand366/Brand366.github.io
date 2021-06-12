@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+    <title>Brandon's Portfolio | Home</title>
+    <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link rel="icon" href="images/programming.png" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <!-- header -->
+    <header class="page-header-container">
+        <div id="logo-container">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo-image"></a>
+        </div>
+        <!-- nav bar -->
+        <nav>
+            <ul id="nav-bar-container" role="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- contact info -->
+        <article id="contact-info-container">
+
+            <section id="contact-info-container-inner">
+                <h3>My Contact Info</h3>
+                <span>Ph No.</span>
+                <p>"0403 518 200"</p>
+                <span>My email:</span>
+                <p>brandon.vonhoff@yahoo.com</p>
+            </section>
+            <!-- links to GitHub & LinkedIn-->
+            <div id="professional-links-container">
+
+                <a href="https://www.linkedin.com/in/brandon-vonhoff/">
+                    <img class="professional-img" src="images/linkedin.png" alt="LinkedIn Logo"></a>
+                <a href="https://github.com/Brand366"><img class="professional-img" src="images/github.png"
+                        alt="Github Logo"></a>
+            </div>
+        </article>
+        <!-- contact form -->
+        <article id="form-container">
+            <h2 class="form-header">Shoot Me A Quick Message</h2>
+            <form method="POST" action="mailto:brandon.vonhoff@yahoo.com">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" size="30" maxlength="30" placeholder="Your name.."
+                    required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="visitor-email" placeholder="Your email.." required><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" maxlength="250" placeholder="Enter your message here.."
+                    style="height:200px" required></textarea>
+
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </article>
+    </main>
+</body>
+<!-- footer -->
+<footer id="footer-container">
+
+    <div id="copyright-container">
+        <p> &copy; Copyright 2021 | Brandon Vonhoff | All Rights Reserved</p>
+    </div>
+
+    <article>
+        <ul id="footer-links-container">
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img class="footer-img" src="images/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img class="footer-img" src="images/github.png"
+                        alt="Github Logo"></a>
+            </li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"></a><img class="footer-img" src="images/email.png"
+                    alt="email logo"></a></li>
+        </ul>
+    </article>
+
+</footer>
+
+</html>

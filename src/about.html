@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+    <title>Brandon's Portfolio | Home</title>
+    <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link rel="icon" href="images/programming.png" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <!-- header -->
+    <header class="page-header-container">
+        <div id="logo-container">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo-image"></a>
+        </div>
+        <!-- nav bar -->
+        <nav>
+            <ul id="nav-bar-container" role="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="self-img-container">
+            <figure id="self-img-container-inner">
+                <img id="self-img" src="images/me.jpg" alt="man wearing glasses and grey shirt at beach">
+                <figcaption class='name-text'>Brandon Vonhoff</figcaption>
+            </figure>
+        </div>
+        <!-- content about me -->
+        <article id="about-content-container">
+            <section class="about-content-text">
+                <h2>A Bit About Me</h2>
+                <p>I have always had a keen interest in the world of programming, and recently
+                    started my journey down
+                    the path of learning about the many applications of programming and how it can be used creatively
+                    with Coder Academy in the Code, Cloud & Cyber-security bootcamp course.
+                    When I'm not engrossed in programming and the such, I'm usually working out, hiking all around, and
+                    hanging out with my son (not particularly in that order &#128516).
+                    I have luckily
+                    travelled to New Zealand and hiked a plenty while I was there but unfortunately didn't go to the
+                    Shire. I also have travelled to Japan and explored the beautiful cities of Tokyo, Kyoto, and Osaka.
+                </p>
+            </section>
+
+            <section class="about-content-text">
+                <h2>What I Have Done With Programming (So far...)</h2>
+                <p> I intially started my path in programming by attending a online course through a company called
+                    Udacity. The course itself was called "Intro to Programming Nanodegree" and it gave me a good
+                    foundation in HTML, CSS, Python, and JavaScript. It even gave me insight into navigating the shell
+                    and using GitHub for projects. I then completed two Data Science courses online through another
+                    company called edX. Those courses were an introduction into the field and utilized Python for
+                    gathering, parsing, and presenting data.
+                </p>
+            </section>
+
+            <section class="about-content-text">
+                <h2>Goals with Programming</h2>
+                <p>My current goal in regards to programming is to become a full-fledged,
+                    full-stack
+                    developer. Whether
+                    that is with a particluar company or free lancing on my own, I hope to dicover what area in
+                    particluar interests me and in what way I can use programming to help people in any way that is
+                    possible. If it interests you though, you can find my resume below for a run-down of my work
+                    experience and education:</p>
+                <div id="resume-link-container">
+                    <!-- link to resume-->
+                    <a id='resume-link' href="link-folder/RESUME.pdf">My Resume</a>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+</body>
+<!-- footer -->
+<footer id="footer-container">
+
+    <div id="copyright-container">
+        <p> &copy; Copyright 2021 | Brandon Vonhoff | All Rights Reserved</p>
+    </div>
+
+    <article>
+        <ul id="footer-links-container">
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img class="footer-img" src="images/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img class="footer-img" src="images/github.png"
+                        alt="Github Logo"></a>
+            </li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"></a><img class="footer-img" src="images/email.png"
+                    alt="email logo"></a></li>
+        </ul>
+    </article>
+
+</footer>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+    <title>Brandon's Portfolio | Home</title>
+    <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link rel="icon" href="images/programming.png" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <!-- header -->
+    <header class="page-header-container">
+        <div id="logo-container">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo-image"></a>
+        </div>
+        <!-- nav bar -->
+        <nav>
+            <ul id="nav-bar-container" role="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- blog page intro-->
+        <div id="blog-page-intro-container">
+            <article id="blog-page-intro-text">
+                <h2>My Blogs</h2>
+                <p>Below is a list of blogs generally about programming or random things happening in my life</p>
+            </article>
+        </div>
+
+        <!-- blog page content and links to each page -->
+
+        <article id="blog-post-container">
+
+            <section class="blog-post-inner-container">
+                <h2>My Experience With Coder Academy So Far</h2>
+                <figure class="blog-image-link-container">
+                    <a href="blog-post1.html"><img class="blog-image-link" src="images/coderacademy.jpg"
+                            alt="orange coderacademy image in center with blue background"></a>
+                    <figcaption class="posted-date">Posted on: 05/06/2021</figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut cupiditate ipsum eum
+                    nostrum iusto.
+                    Dolorum molestias perferendis est voluptatibus ab placeat autem inventore vel eos qui, quo sed quae
+                    eveniet.</p>
+            </section>
+
+            <section class="blog-post-inner-container">
+                <h2>What I Experienced With The Portfolio</h2>
+                <figure class="blog-image-link-container">
+                    <a href="blog-post2.html"><img class="blog-image-link" src="images/portfolio.jpg"
+                            alt="chalkboard with portfolio written on"></a>
+                    <figcaption class="posted-date">Posted on: 11/06/2021</figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut cupiditate ipsum eum
+                    nostrum iusto.
+                    Dolorum molestias perferendis est voluptatibus ab placeat autem inventore vel eos qui, quo sed quae
+                    eveniet.</p>
+            </section>
+
+            <section class="blog-post-inner-container">
+                <h2>How I Keep Fit While Programming
+                </h2>
+                <figure class="blog-image-link-container">
+                    <a href="blog-post3.html"><img class="blog-image-link" src="images/fitness.jpg"
+                            alt="dad working out with son in gym"></a>
+                    <figcaption class="posted-date">Posted on: 21/05/2021</figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut cupiditate ipsum eum
+                    nostrum iusto.
+                    Dolorum molestias perferendis est voluptatibus ab placeat autem inventore vel eos qui, quo sed quae
+                    eveniet.</p>
+            </section>
+
+            <section class="blog-post-inner-container">
+                <h2>Goals In The World Of Programming For Me
+                </h2>
+                <figure class="blog-image-link-container">
+                    <a href="blog-post4.html"><img class="blog-image-link" src="images/programming-goals.jpg"
+                            alt="monitor with python code displayed"></a>
+                    <figcaption class="posted-date">Posted on: 09/06/2021</figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut cupiditate ipsum eum
+                    nostrum iusto.
+                    Dolorum molestias perferendis est voluptatibus ab placeat autem inventore vel eos qui, quo sed quae
+                    eveniet.</p>
+            </section>
+
+            <section class="blog-post-inner-container">
+                <h2>My Travel Recap For New Zealand and Japan</h2>
+                <figure class="blog-image-link-container">
+                    <img class="blog-image-link" src="images/japan.jpg" alt="busy Akihabra street at night">
+                    <figcaption class="posted-date">Posted on: 02/05/2021</figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut cupiditate ipsum eum
+                    nostrum iusto.
+                    Dolorum molestias perferendis est voluptatibus ab placeat autem inventore vel eos qui, quo sed quae
+                    eveniet.</p>
+            </section>
+
+        </article>
+    </main>
+</body>
+
+<!-- footer -->
+<footer id="footer-container">
+
+    <div id="copyright-container">
+        <p> &copy; Copyright 2021 | Brandon Vonhoff | All Rights Reserved</p>
+    </div>
+
+    <article>
+        <ul id="footer-links-container">
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img class="footer-img" src="images/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img class="footer-img" src="images/github.png"
+                        alt="Github Logo"></a>
+            </li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"></a><img class="footer-img" src="images/email.png"
+                    alt="email logo"></a></li>
+        </ul>
+    </article>
+
+</footer>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+    <title>Brandon's Portfolio | Home</title>
+    <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link rel="icon" href="images/programming.png" />
+    <link rel="stylesheet" href="styles.css" integrity="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="page-header-container">
+        <div id="logo-container">
+            <a href="index.html"><img class="logo" src="images/logo.png"
+                    alt="logo with text Brandon Vonhoff and i/o icon"></a>
+        </div>
+        <!-- nav bar -->
+        <nav>
+            <ul id="nav-bar-container" role="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- home content -->
+    <main>
+        <section id="home-intro-container">
+            <h1 class="home-intro-title"> Welcome! I am Brandon Vonhoff</h1>
+            <h2 class="home-intro-title"> I'm currently studying to be a DevOps engineer that specializes in the
+                following:</h2>
+        </section>
+
+        <article class="home-img-container">
+
+            <figure>
+                <img class='home-img' src="images/code.png" alt="coding input symbols">
+                <figcaption class='home-img-description'>Coding</figcaption>
+            </figure>
+
+            <figure>
+                <img img class='home-img' src="images/cloud-network.png" alt="cloud network with nodes">
+                <figcaption class='home-img-description'>Cloud</figcaption>
+            </figure>
+
+
+            <figure>
+                <img img class='home-img' src="images/cyber-security.png" alt="cyber security network and nodes">
+                <figcaption class='home-img-description'>Cyber</figcaption>
+            </figure>
+
+        </article>
+
+    </main>
+</body>
+<!-- footer -->
+<footer id="footer-container">
+
+    <div id="copyright-container">
+        <p> &copy; Copyright 2021 | Brandon Vonhoff | All Rights Reserved</p>
+    </div>
+
+    <article>
+        <ul id="footer-links-container">
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img class="footer-img" src="images/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img class="footer-img" src="images/github.png"
+                        alt="Github Logo"></a>
+            </li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"></a><img class="footer-img" src="images/email.png"
+                    alt="email logo"></a></li>
+        </ul>
+    </article>
+
+</footer>
+
+</html>

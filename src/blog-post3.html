@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+    <title>Brandon's Portfolio | Home</title>
+    <meta name="description" content="Brandon Vonhoff's professional portfolio page.">
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <link rel="icon" href="images/programming.png" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <a name="top"></a>
+
+    <!-- header -->
+    <header class="page-header-container">
+        <div id="logo-container">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo-image"></a>
+        </div>
+        <!-- nav bar -->
+        <nav>
+            <ul id="nav-bar-container" role="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- blog page content -->
+
+        <article id="blog-page-container">
+
+            <section class="blog-page-inner-container">
+                <h2>How I Keep Fit While Programming</h2>
+                <figure class="blog-page-image-container">
+                    <img class="blog-image" src="images/fitness.jpg" alt="dad working out with son in gym">
+                    <figcaption class="posted-date">Posted on: 21/05/2021</figcaption>
+                </figure>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut cupiditate ipsum eum
+                    nostrum iusto.
+                    Dolorum molestias perferendis est voluptatibus ab placeat autem inventore vel eos qui, quo sed quae
+                    eveniet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut cupiditate ipsum eum
+                    nostrum iusto.
+                    Dolorum molestias perferendis est voluptatibus ab placeat autem inventore vel eos qui, quo sed quae
+                    eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem, fugit eos ex
+                    et quisquam mollitia quibusdam cupiditate iste earum dignissimos accusamus pariatur blanditiis
+                    veniam voluptates ipsum. Nobis, perspiciatis iusto. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Facere officiis quasi quidem quo excepturi, nihil tenetur dignissimos, assumenda
+                    mollitia non quae perferendis saepe? Incidunt nostrum totam dolores ipsam, laborum officiis! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolore eligendi ipsa incidunt sequi!
+                    Eaque obcaecati ea mollitia vel dolorum dolorem inventore sit eos magnam iste officia nostrum, culpa
+                    enim.</p>
+            </section>
+        </article>
+        <section id="blog-btn-container">
+            <a href="blog-post2.html" class="prev-btn">&#8249; Previous</a>
+            <a href="#" class="top-btn">Back to top</a>
+            <a href="blog-post4.html" class="next-btn">Next &#8250;</a>
+        </section>
+    </main>
+</body>
+
+<!-- footer -->
+<footer id="footer-container">
+
+    <div id="copyright-container">
+        <p> &copy; Copyright 2021 | Brandon Vonhoff | All Rights Reserved</p>
+    </div>
+
+    <article>
+        <ul id="footer-links-container">
+            <li><a href="https://www.linkedin.com/in/brandon-vonhoff/"><img class="footer-img" src="images/linkedin.png"
+                        alt="LinkedIn Logo"></a></li>
+            <li><a href="https://github.com/Brand366"><img class="footer-img" src="images/github.png"
+                        alt="Github Logo"></a>
+            </li>
+            <li><a href="mailto:brandon.vonhoff@yahoo.com"></a><img class="footer-img" src="images/email.png"
+                    alt="email logo"></a></li>
+        </ul>
+    </article>
+
+</footer>
+
+</html>
